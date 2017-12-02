@@ -77,6 +77,8 @@ public class Practice13CameraRotateHittingFaceView extends View {
         int centerY = point.y + bitmapHeight / 2;
 
         camera.save();
+        // 拉远Camera
+        camera.setLocation(0, 0, -10);
         matrix.reset();
         camera.rotateX(degree);
         camera.getMatrix(matrix);
